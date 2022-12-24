@@ -87,7 +87,7 @@ function EmployeesProfile() {
         dispatch(editEmployee(product, data, true));
         break;
       case 'ADMIN':
-        dispatch(editAdmin(product, { ...data, active: true }, true));
+        dispatch(editAdmin(product, data, false, true));
         break;
       case 'SUPER_ADMIN':
         dispatch(editSuperAdmin(product, data));
@@ -101,7 +101,7 @@ function EmployeesProfile() {
     putEmployee(data, role);
     setValues(data);
   };
-
+  5;
   const resetForm = () => {
     reset(values);
   };
