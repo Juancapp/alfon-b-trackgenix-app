@@ -2,7 +2,6 @@ import Joi from 'joi';
 
 export const schemaEdit = Joi.object({
   name: Joi.string()
-    .alphanum()
     .trim()
     .min(3)
     .max(50)
@@ -17,7 +16,6 @@ export const schemaEdit = Joi.object({
       'any.required': 'Name is required.'
     }),
   lastName: Joi.string()
-    .alphanum()
     .trim()
     .min(3)
     .max(50)
@@ -59,7 +57,6 @@ export const schemaEdit = Joi.object({
 
 export const schemaCreate = Joi.object({
   name: Joi.string()
-    .alphanum()
     .trim()
     .min(3)
     .max(50)
@@ -74,7 +71,6 @@ export const schemaCreate = Joi.object({
       'any.required': 'Name is required.'
     }),
   lastName: Joi.string()
-    .alphanum()
     .trim()
     .min(3)
     .max(50)
