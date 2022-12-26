@@ -170,6 +170,7 @@ const ProjectForm = () => {
                     list={employeesList}
                     name={`employees[${index}].employee`}
                     kind="name"
+                    secondKind="lastName"
                     id={id}
                     title="Employee"
                     error={`errors.employees[${index}].employee`?.message}
